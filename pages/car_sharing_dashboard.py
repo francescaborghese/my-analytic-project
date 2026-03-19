@@ -5,9 +5,9 @@ import numpy as np
 # ---- LOAD DATA ----
 @st.cache_data
 def load_data():
-    trips = pd.read_csv("/workspaces/my-analytic-project/.venv/datasets/trips.csv")
-    cars = pd.read_csv("/workspaces/my-analytic-project/.venv/datasets/cars.csv")
-    cities = pd.read_csv("/workspaces/my-analytic-project/.venv/datasets/cities.csv")
+    trips = pd.read_csv("datasets/trips.csv")
+    cars = pd.read_csv("datasets/cars.csv")
+    cities = pd.read_csv("datasets/cities.csv")
     return trips, cars, cities
 
 trips, cars, cities = load_data()
